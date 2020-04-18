@@ -38,7 +38,9 @@ typedef struct particle_s
 	ptype_t	type;
 	struct particle_s *next;
 } particle_t;
-
+#define PARTICLE_Z_CLIP 8.0
+#define CYCLE 128
+#include "d_local.h"
 #else		// software
 
 #include "d_local.h"

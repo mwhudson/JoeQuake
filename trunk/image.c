@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "quakedef.h"
 #ifdef GLQUAKE
 #ifndef _WIN32
-#include "jpeg-linux/jpeglib.h"	// FIXME!!!
+#include <jpeglib.h>
 #else
 #include "jpeglib.h"
 #endif
