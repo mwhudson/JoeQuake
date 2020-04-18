@@ -46,7 +46,7 @@ static	Display		*dpy = NULL;
 static	Window		win;
 static	GLXContext	ctx = NULL;
 
-static	float	old_windowed_mouse = 0, mouse_x, mouse_y, old_mouse_x, old_mouse_y;
+float	old_windowed_mouse = 0, mouse_x, mouse_y, old_mouse_x, old_mouse_y;
 
 #define KEY_MASK (KeyPressMask | KeyReleaseMask)
 #define MOUSE_MASK (ButtonPressMask | ButtonReleaseMask | PointerMotionMask)
@@ -60,6 +60,8 @@ qboolean vid_hwgamma_enabled = false;
 qboolean customgamma = false;
 qboolean fullsbardraw = false;
 qboolean fullscreen = false;
+
+qboolean gl_have_stencil = false;
 
 static	int	scr_width, scr_height, scrnum;
 

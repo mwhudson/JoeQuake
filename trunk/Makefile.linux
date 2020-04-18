@@ -62,7 +62,7 @@ GLX_C_FILES := \
 	\
 	gl_draw		gl_mesh		gl_model	gl_refrag \
 	gl_rlight	gl_rmain	gl_rmisc	gl_rpart \
-	gl_rsurf	gl_screen	gl_warp \
+	gl_rsurf	gl_screen	gl_warp         gl_decals \
 	\
 	host		host_cmd	keys		mathlib \
 	menu		nehahra		net_bsd		net_dgrm \

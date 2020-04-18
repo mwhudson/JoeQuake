@@ -38,9 +38,6 @@ typedef struct particle_s
 	ptype_t	type;
 	struct particle_s *next;
 } particle_t;
-#define PARTICLE_Z_CLIP 8.0
-#define CYCLE 128
-#include "d_local.h"
 #else		// software
 
 #include "d_local.h"
@@ -63,6 +60,7 @@ vec3_t			r_pright, r_pup, r_ppn;
 
 #if !id386
 
+#ifndef GLQUAKE
 /*
 ==============
 D_DrawParticle
@@ -204,7 +202,7 @@ void D_DrawParticle (particle_t *pparticle)
 		break;
 	}
 }
-
+#endif
 #endif	// !id386
 
 #ifdef GLQUAKE
